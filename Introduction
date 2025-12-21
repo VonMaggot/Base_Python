@@ -1,0 +1,12 @@
+---------- Introduction : --------------
+En python nous utilisons print() pour afficher un texte qui, lui, doit être en guillement.
+ex : print("Hello World!")
+
+----------- Les commentaires : ----------
+Ils sont utilisés pour ajouter des notes explicatives au sein du code et ils sont ignorés par le compilateur. Ils servent simplement à la compréhension humaine.
+On peut utiliser le commentaires en une seule ligne # ou les commentaires multi ligne utilisant des guillement triples """
+
+--------- Les pratiques courantes en termes de commentaires : ----------
+Commentaires TODO qui indiquent des travaux à effectuer à l'avenir.
+Désactiver temporérement du code. On peut commenter des lignes de codes pour les désactiver temporairement sans les supprimer. Utile pour les tests ou pour basculer entre différentes implémentations.
+Expliquer une logique complexe.
