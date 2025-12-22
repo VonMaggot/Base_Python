@@ -1,1 +1,23 @@
+----- Nombres -----
+Les variables sont des conteneures. Ils contiennent des valeurs de données.
+Elles sont utilisées pour stocker, manipuler, et afficher des informations dans un programme.
+Les variables ont un nom unique et ont une valeur qui peut être de différents types.
+Pour initialiser une variable :
+variable_name = value
 
+----- Différents types de nombres -----
+int : nombre entier comme 1 ou -2
+float : nombre réel comme 2.5 ou 0.98
+exemple pour initialiser une variable de type int avec le nom a et la valeur 3 :
+a = 3
+exemple pour initialiser une variable de type float avec le nom b et la valeur 13.2 :
+b = 13.2
+
+----- Chaines -----
+Un char est un carctère unique. Par exemple : 1, 6, %, b, p, t, ...
+Le type str (chaine) est un type spécial qui consiste en plusieurs chars.
+Pour initialiser une valeur de chaine dans une variables : y encloser dans des guillemets simple ou double.
+Par exemple :
+s1 = "This is a string"
+s2 = 'This is also a string'
+ATTENTION : le type char représente un seul caractère 
