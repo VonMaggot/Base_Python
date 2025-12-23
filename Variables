@@ -21,3 +21,16 @@ Par exemple :
 s1 = "This is a string"
 s2 = 'This is also a string'
 ATTENTION : le type char représente un seul caractère 
+
+----- Booléen -----
+Un type bool (booléen) n'à que 2 valeurs possible : True ou False.
+Elles sont sensible à la casse donc elles doivent commencer par une majuscule.
+Exemple : variable_true = True
+variable_false = False
+
+----- Conventions de nommage -----
+Ensemble de directives que les developpeurs suivent.
+Ca rend le code plus lisible et maintenable.
+En python, les variables sont écrit en snake case. C'est à dire que les noms sont séparés par des underscore (tiret bas)
+Il faut donc, lors de la rédaction, etre descriptif et utiliser des mots significatifs :
+exemple : book_title = "The Maze Runner"
