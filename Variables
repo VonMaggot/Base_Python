@@ -34,3 +34,12 @@ Ca rend le code plus lisible et maintenable.
 En python, les variables sont écrit en snake case. C'est à dire que les noms sont séparés par des underscore (tiret bas)
 Il faut donc, lors de la rédaction, etre descriptif et utiliser des mots significatifs :
 exemple : book_title = "The Maze Runner"
+
+----- Variables vides -----
+None est une valeur spéciale qui représente 'rien" ou "aucune valeur".
+Comme une boite vide, il n'y a rien dedans.
+exemple : empty_box = None
+Dans un scénarion réel, vous pourriez utiliser None pour indiquer que quelque chose n'a pas été initialisé.
+exemple :
+score = None #Score hasn"t been calculated yet
+name = None #Name hasn't been entered yet
