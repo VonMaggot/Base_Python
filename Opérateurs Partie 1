@@ -1,0 +1,10 @@
+----- Opérateurs arithmétiques -----
+Les opérateurs sont utilisés pour effectuer des opérations sur des valeurs.
+Opérateurs arithmétiques basiques :
+additions = +
+soustraction = -
+multiplication = *
+division = /
+exemple : a = 87.5
+b = 15.6
+c = a - b
