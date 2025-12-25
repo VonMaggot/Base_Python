@@ -8,3 +8,20 @@ division = /
 exemple : a = 87.5
 b = 15.6
 c = a - b
+
+----- Opérateurs modulo -----
+L'opérateur modulo % indique ce qui reste après la divison d'un nombre par un autre.
+result = dividend % divisor
+- dividend = Nombre qui est divisé.
+- divisor = Nombre qui divise le dividend
+- result = Le reste de la division.
+
+Par exemple : result = 10%3
+3 entre 3 fois dans 10, avec un reste de 1. Le résultat sera donc 1.
+
+En générale, l'opérateur modulo est utilisé pour vérifier si un nombre est pair ou impair.
+Nombre pair = le diviser par 2 laisse un reste de 0.
+Nombre impair = le diviser par 2 laisse un reste de 1.
+
+Pour faire une division entière, il faut utiliser ceci : //
+Exemple : 7//2 = 3 (pas 3,5 vu que l'on veut que un nombre entier)
