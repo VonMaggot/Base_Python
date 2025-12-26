@@ -55,3 +55,4 @@ Opérateurs possible pour la comparaison :
 <= : inférieur ou égal à (ex : 1 <= 2 retourne true)
 
 L'opérateur de comparaison retourne True si la comparaison sinon elle retourne False.
+Ce sont donc des variables Booléenne.
