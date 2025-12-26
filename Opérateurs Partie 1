@@ -25,3 +25,33 @@ Nombre impair = le diviser par 2 laisse un reste de 1.
 
 Pour faire une division entière, il faut utiliser ceci : //
 Exemple : 7//2 = 3 (pas 3,5 vu que l'on veut que un nombre entier)
+
+----- Raccourcis arithmétiques -----
+Python à créer un raccourci pratique pour les opérations arithmétique d'auto-assigniation.
+Exemple : au lieu d'écrire ceci :
+a = 5
+b = a + 3
+Nous pouvons le simplifier en écrivant ceci :
+a = 5
+b +=3
+L'opérateur += rajoute 3 à a.
+
+Cette opération est valide pour toutes les opérations arithmétiques.
++ : *=
+- : -=
+* : *=
+/ : /=
+% : %=
+
+----- Opérateurs de comparaisons -----
+Ils sont utilisés pour comparer entre deux opérandes.
+Parfois nous devons vérifier si un opérande est supérieur à, inférieur à ou égal à un autre opérande.
+Opérateurs possible pour la comparaison :
+== : égal à (ex : 1 == 2 retourne false)
+!= : non égal (ex : 1 != 2 retourne true)
+> : supérieur à (ex : 1 > 2 retourne false)
+< : inférieur à (ex : 1 < 2 retourne true)
+>= : supérieur ou égal à (ex : 1 >= 2 retourne false)
+<= : inférieur ou égal à (ex : 1 <= 2 retourne true)
+
+L'opérateur de comparaison retourne True si la comparaison sinon elle retourne False.
