@@ -1,0 +1,46 @@
+----- Opérateurs logiques 1 -----
+Les opérateurs logiques sont utilisés pour combiner des instructions conditionnelles.
+Python possède trois opérateurs logiques :
+- and
+- or
+- not
+
+ANd : L'opérateur and retourne Trye si les deux instructions sont vraies.
+x = True
+y = True
+result = y and y
+
+Après l'exécution du code, result contient : True
+
+Si l'une des valeurs est False, le résultat sera False :
+x = Trye
+y = False
+result = x and y
+Cela nous donne False.
+
+----- Opérateurs logiques Partie 2 -----
+Les opérateurs logiques ont un tableau appelé "table de vérité" qui montre ce que 
+retourne la combinaison des opérateurs logiques.
+
+Table de vérité pour l'opérateur and :
+a        b       a and b
+False    False   False
+False    True    False
+True     False   False
+True     True    True
+La seule façon d'obtenir un True pour l'opérateur and est si a et b sont tous deux True.
+
+Table de vérité pour l'opérateur or :
+a        b       a and b
+False    False   False
+False    True    True
+True     False   True
+True     True    True
+Dans ce cas, pour obtenir un résultat True, soit a soit b doit être True.
+
+Table de vérité pour l'opérateur not :
+a        not a
+False    True
+True     False
+Ici la valeur de a est inversé. Si a est False alors not a est True.
+En gros il transforme True en False et False en True.
