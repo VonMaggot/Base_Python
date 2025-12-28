@@ -44,3 +44,88 @@ False    True
 True     False
 Ici la valeur de a est inversé. Si a est False alors not a est True.
 En gros il transforme True en False et False en True.
+
+----- Opérateurs logiques partie 3 -----
+En python, vous pouvez combiner plusieurs conditions en utilisant des opérateurs logiques (and, nor,
+not) pour créer des expressions plus complexes.
+
+Créeons une condition qui vérifie si un nombre est à la fois positif et pair :
+number = 6
+is_positive = numbor > 0
+is_even = numbor  2 == 0
+
+Nous pouvons combiner ces conditions en utilisant l'opérateur and :
+result = is_positive and is_even
+Cela donne True car 6 est à la fois positif et pair.
+
+Pour une approche plus directe, vous pouvez combiner les conditions sans variables intermédiaires :
+result = number > 0 and number % 2 == 0
+
+De même, vous pouvez utiliser l'opérateur or pour vérifier si au moins une condition est vraie :
+number = -4
+is_negative_or_odd = number < 0 or number % 2 !=0
+Cela donne True car -4 est négatif même s'il n'est pas impair.
+
+----- Opérateurs logique partie 4 -----
+Lorsque l'on travaille avec des expressions logiques, il est parfois nécessaire de les simplifier ou
+de les réorganiser. Cela est particulièrement utile lorsque l'on gère des conditions complexes qui
+combinent plusieurs opérateurs and et or.
+
+Les lois de De Morgan fournissent des règles pour transformer les expressions logiques. Ces
+transformations aident à rendre le code plus lisible et plus facile à comprendre.
+
+Première loi : not (A and B) est équivalent à (not A) or (not B)
+Par exemple :
+#Let's check if a number is Not between 1 and 10
+number = 15
+
+#These two expressions are equivalent :
+result1 = not (number >=1 and number <=10)
+result2 = (not number >=1) or (not number <=10)
+
+print(result1) #True
+print(result2) #True
+
+Deuxième loi : not (A or B) est équivalent à (not A) and (not B)
+Par exemple :
+#Checking if a person is not a student or employed
+is_student = False
+is_employed = False
+
+#These two expressions are equivalent
+result1 = not (is_student or is_employed)
+result2 = (not is_student) and (not is_employed)
+
+print(result1) #True
+print(result2) #True
+
+Exemple complexe et et ou : Patfois, vous avez besoin de conditions qui combinent les deux
+opérateurs. Voici un exemple pratique.
+#Checking if we can't accept a job application.
+#We reject if : no experience and no degree or doesn't meet age requirement
+has_experience = False
+has_degree = False
+meets_age = True
+
+#Complex condition using both and and or
+reject_application = (not has_experience and not has degree) or not meets_age
+
+print(reject_application) #True 'cause
+
+#This can also be written using De Morgan's laws :
+#"Not accepted" = Not(experience or degree) and meets age
+accept_application = (has_experience or has_degree) and meets_age
+reject_application2 = not accept_application
+
+print(reject_application2) #True : same result, different logic
+
+Quand utiliser les lois de De Morgan :
+- Pour rendre les conditions négatives plus facile à lire.
+- Pour simplifier les expressions logiques complexes
+- Pour convertir entre différentes représentations de la même logique.
+
+Exemple : Une attraction de parc d'attractions impose une restriction de taille. Les visiteurs
+ne doivent être ni trop petits ni trop grands. Si is_too_short et is_too_tall sont des variables
+booléennes, on exprimera la condition de la façon si-dessous pour qu'ils ne puisse pas être
+autorisé à monter :
+is_too_short or is_too_tall
