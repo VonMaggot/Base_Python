@@ -1,1 +1,24 @@
+----- Instruction if -----
+Les instructions if nous permettent d'exécuter du code avec des conditions.
+Par exemple, regardons le code suivant :
+age = 20
+status = "child"
+if age> 18:
+ status = "Adult"
+age += 1
 
+Le code ci-dessus vérifie si la variable age est supérieur à 18. Si c'est le cas, il définira status pour
+contenir la chaine "Adult".
+A la fin, le code incrémentera age de 10 que l'âge soit supérieur à 18 ou non.
+
+Pour utiliser une instruction if, nous devons ajouter deux points : à la fin de l'if, et tout ce
+qui est à l'intérieur du if est indenté avec 4 espaces ou tabulation :
+
+if conditions:
+ code
+ code
+ code
+ code
+
+Si la condition est True, nous entrerons dans le bloc de code à l'intérieur de l'if (le code
+indenté).
