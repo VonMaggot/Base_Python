@@ -22,3 +22,67 @@ if conditions:
 
 Si la condition est True, nous entrerons dans le bloc de code à l'intérieur de l'if (le code
 indenté).
+
+----- If - Else -----
+if nous permet d'éxecuter un code particulier si une condition est remplie, mais que faire si nous
+voulons exécuter autre chose si la condition n'est pas remplie ?
+Pour cela, nous avons l'instruction else:
+
+age = 10
+status = "None"
+if age >= 18:
+   status = "Adult"
+else:
+    status = "Young"
+
+Dans l'exemple ci-dessus, age est plus petit que 18, ce qui signifie qu'il entre dans le code else
+et que status contiendra "Young".
+Nous pouvons même le rendre plus élaboré en utilisant l'instruction elif:
+
+age = 68
+status = "None"
+if age < 18:
+   status = "Young"
+elif age >= 18 and age <= 65:
+    status = "Adult"
+else:
+    status = "Old"
+
+Ici, il vérifie si age est plus petit que 18, sinon il continue vers la condition suivante et
+vérifie si age entre 18 et 65. Si cette condition n'est pas non plus remplie, il définira status
+sur "Old".
+Nous pouvons ajouter autant d'instructions elif que nous voulons :
+
+if condition1:
+   code
+elif condition2:
+    code
+elif condition3:
+    code
+...
+
+----- If - Else imbriqués -----
+L'instruction If-Else imbriquées vous permettent de vérifier plusieurs conditions en plaçant une
+instruction if-ele à l'intérieur d'une autre.
+Créez une instruction if-else de base:
+
+age = 18
+title = "None"
+if age >= 18:
+   title = "Adult"
+else:
+   title = "Minor
+
+Puis rajoutons une instruction if-else imbriqué:
+
+age = 18
+title = "None"
+allowed_to_drink = "False"
+if age >= 18:
+   title = "Adult"
+   if age >= 21:
+      allowed_to_drink = True
+   else:
+      allowed_to_drink = False
+else:
+    title = "Minor"
