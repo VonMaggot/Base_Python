@@ -1,0 +1,45 @@
+----- Sortie -----
+Nous avons déjà vu comment afficher quelque chose, mais récapitulons.
+En programmation, afficher quelque chose est souvent appelé "printing".
+En python, pour afficher quelque chose à l'écran, nous utilison print()
+PAr exemple :
+print("Hello")
+
+L'exemple ci-dessus affiche "Hello" à l'écran.
+Rappelez-vous que vous devez entourer ce que vous voulez afficher avec "" ou avec '', c'est une string
+à l'intérieur de print().
+
+----- Sortie avec variables -----
+Pour l'instant, nous avons appris à imprimer des chaînes simples, mais parfois nous devons insérer des
+valeurs de variables dans la chaine.
+Par exemple:
+
+age = 10
+print("His age is: age")
+
+Cela imprimera "His age is: age" au lieu de "His age is 10".
+Pour que cela fonctionne, nous utiliserons les f-strings:
+
+age = 10
+print(f"His age is: {10}")
+
+Cela imprime "His age is 10".
+Avant les guillemets, nous ajouterons la lettre f et à l'intérieur de la chaîne, où que nous
+mettions des accolades cela inérera la valeur de ce qui est écrit à l'intérieur.
+En gros f a comme but de rendre la chaîne formatée, permettant l'insertion de variables au sein
+de la chaîne.
+
+----- Entrée -----
+Jusqu'à présent, nous avons stocké dans des variables des valeurs auxquelles nous avons pensé.
+Les programmes ne fonctionnent généralement pas de cette façon. Nous recevons des valeurs d'une
+source externe, un utilisateur par exeterne.
+Pour obtenir une entrée de l'utilisateur oud du système, nous devons écrire:
+
+var = input()
+
+Cela stockera l'entrée dans la variable var.
+L'entrée est toujours de stype string. Par exemple, si l'entrée est 56, alors var contiendra la 
+chaîne "56".
+
+Exemple : Pour stocker la saisie de l'utilisateur dans une variable nommée userAge, nous écriverons:
+userAge = input()
