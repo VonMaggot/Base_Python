@@ -43,3 +43,28 @@ chaîne "56".
 
 Exemple : Pour stocker la saisie de l'utilisateur dans une variable nommée userAge, nous écriverons:
 userAge = input()
+
+----- Conversion -----
+Pour convertir l'entrée en un type différent, nous devons convertir.
+Pour convertir une chaîne en un int (un nombre entier), nous écrirons:
+var = input()
+var = int(var)
+
+Ou en une seule ligne:
+var = int(input())
+
+Si l'entrée est un nombre, c'est-à-dire 5, 4, 54, alors va contiendra un nombre.
+Si l'entrée contient un nombre invalide, 5ab, bb, akt, etc.. alors le programme échouera.
+
+Voici un tableau qui montre comment convertir vers différents types:
+Conversion                                Explication
+int()                                     Convertir un nombre entier
+float()                                   Convertir un nombre réel
+bool()                                    Convertir en un booléen
+str()                                     Convertir en une chaîne
+
+Il est important d'utiliser le bon type car cela peut affecter la sortie.
+Ajouter deux chaînes donnera :
+"5" + "5" = "55"
+Ajouter deux nombres donnera:
+5 + 5 = 10
