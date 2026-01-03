@@ -1,1 +1,82 @@
 ----- Boucle for -----
+Parfois, en programmation, il est nécessaire d'effectuer la même opération ou presque la même plusieurs
+fois.
+Pour éviter d'écrire la même chose encore et encore, nous pouvons utiliser des boucles.
+La boucle for a la syntaxe suivante:
+for i in range(start, end)
+    code
+Ex : La syntaxe qui représente correctement une boucle for en Python qui itère de 1 à 10 inclus est:
+for i in range(1, 11)
+
+Le range(start, end) détermine quelle est la valeur de start et quelle est celle de end. La variable i
+recevra toutes les valeurs de start à end (sans inclure end) de manière séquentielle.
+Par exemple: for i in range(0, 5):
+                  print(i)
+Elle exécutera l'instruction print 5 fois:
+0
+1
+2
+3
+4
+
+Nous pouvons simplifier le range(0, 5) en range(5)
+for i in range(5)
+    print(i)
+
+Les boucles ont de nombreux cas d'utilisation. Par exemple, additionnons tous les nombres
+de 1 à 100:
+
+sum_numbers = 0
+for i in range(1, 101):
+    sum_numbers +=1
+print(sum_sumbers)
+
+Cela va d'abord boucler à travers tous les nombres entre 1 et 101 (sans inclure 101) et les
+additionner tous. Ensuite, cela imprimera la variable sum_numbers.
+
+----- Boucles While -----
+Une boucle while est différente de la boucle for. Une boucle for nous permet d'itérer sur une
+plage spécifique range, tandis qu'une boucle while nous permet de continuer à itérer tandis qu'une
+certaines condition est remplie.
+En gros, la boucle while en Python exécute un bloc de code tant qu'une certaine condition est True.
+
+Pour utiliser une boucle while, écrivez:
+while condition:
+   code
+
+Le code s'éxecutera uniquement si la condition est True.
+
+Il y a de nombreux cas d'utilisation où une boucle while résoudrait le problème, mais une boucle for
+ne le ferait pas.
+Par exemple, considérez ce problème :
+Trouvez la plus petite puissance de 2 qui est supérieu à un nombre donné.
+Pour le résoudre nous utiliserons une boucle while qui multipliera de manière répetée la puissance
+actuelle de 2 par 2 jusqu'à ce qu'elle devienne supérieur au nombre donnée:
+
+number = 27
+power_of_two = 1
+
+while power_of_two <= number:
+     power_of_two *= 2
+print(power_of_two)
+Le résultat sera 32
+
+----- Break -----
+L'instruction break arrête la boucle immédiatement lorsqu'elle est rencontrée.
+Par exemple :
+
+for i in range(10)
+    if i == 6
+         break
+    print(i)
+
+Dans l'exemple suivant, la boucle itère régulièrement jusqu'à ce qu'elle atteigne le nombre 6.
+Ensuite, le programme entre dans l'instruction if et exécute l'instruction break. Cela quitte
+la boucle immédiatement. La sortie est :
+0
+1
+2
+3
+4
+5
+En gros, l'instruction break arrête immédiatement l'exécution de la boucle et en sort.
