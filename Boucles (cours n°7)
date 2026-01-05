@@ -68,7 +68,7 @@ Par exemple :
 for i in range(10)
     if i == 6
          break
-    print(i)
+ print(i)
 
 Dans l'exemple suivant, la boucle itère régulièrement jusqu'à ce qu'elle atteigne le nombre 6.
 Ensuite, le programme entre dans l'instruction if et exécute l'instruction break. Cela quitte
@@ -80,3 +80,124 @@ la boucle immédiatement. La sortie est :
 4
 5
 En gros, l'instruction break arrête immédiatement l'exécution de la boucle et en sort.
+
+----- Continue -----
+L'instruction continue arrête l'itération actuelle et passe l'itération suivante. Par exemple:
+for i in range(3, 9):
+    if i == 5:
+       continue
+    print(i)
+
+La boucle itérera à travers les nombres de 3 à 8, et lorsqu'elle atteint i = 5, elle sautera
+cette itération et continuera avec la suivante. La sortie est:
+3
+4
+6
+7
+8
+Remarquez, le nombre 5 n'est pas dans la sortie.
+
+----- Récap - Factorielle -----
+Factoriel est une opération mathématique.
+Le factoriel de n est le produit de tous les entiers positifs inférieurs ou égaux à n.
+
+Ces limites importants:
+ - Factoriel de 0 : 1 (par convention mathématique)
+ - Factoriel de 1 : 1 = 1
+
+Exemples:
+ - Facotirel de 2 : 2 = 1 x 2
+ - Factoriel de 3 : 6 = 1 x 2 x 3
+ - Factoriel de 6 : 720 = 1 x 2 x 3 x 4 x 5 x 6
+
+----- La fonction range -----
+La fonction range() en Python génère une séquence de nombres, qui est couramment utilisée avec des
+boucles for pour répéter du code un nombre spécifique de fois.
+
+Créer une plage qui commence à 0 et se termine à 4:
+for i in range(5):
+    print(i)
+
+Ceci produira en sortie:
+0
+1
+2
+3
+4
+
+Vous pouvez également spécifier une valeur de départ:
+for i in range(2, 6):
+    print(i)
+
+Ceci produira en sortie:
+2
+3
+4
+5
+
+Et vous pouvez spécifier une valeur d'étape (incrément):
+for i in range(1, 10, 2):
+    print(i)
+
+Ceci produira une sortie:
+1
+3
+5
+7
+9
+
+Compter à l'envers (Ordre décroissant):
+Vous pouvez également utiliser une valeur d'étape négative pour compter à l'envers. Lors de
+l'utilisation d'une étape négative, la valeur de départ doit être supérieur à la valeur de fin:
+for i in range(10, 0, -1):
+    print(i)
+
+Ceci produira en sortie:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+Vous pouez également utiliser des étapes négatives plus grandes:
+for i in range(20, 9, -2):
+    print(i)
+
+Ceci produira en sortie
+20
+18
+16
+14
+12
+10
+
+Point clé : Lors de l'utilisation d'une étape négative, la valeur de départ doit être
+supérieur à la valeur de fin. La valeur de fin reste exlusive (non incluse).
+
+----- Boucle imbriquée -----
+Une boucle imbriquée est une boucle à l'intérieur d'une autre boucle. La boucle intérieure complète
+toutes ses itérattions pour chaque itération de la boucle extérieur.
+
+Commencçons par une simple boucle imbriquée pour comprendre le concept:
+#Outer Loop
+for i in range(3)
+     print(f"Outer loop iteration: {i}")
+     #inner loop
+     for j in range(2):
+         print(f"Inner loop iteration: {j}")
+
+Quand vous exécuter ce code vous verrez:
+Outer loop iteration: 0
+     Inner loop iteration: 0
+     Inner loop iteration: 1
+Outer loop iteration: 1
+     Inner loop iteration: 0
+     Inner loop iteration: 1
+Outer loop iteration: 2
+     Inner loop iteration: 0
+     Inner loop iteration: 1
