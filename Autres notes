@@ -1,0 +1,4 @@
+----- Multiple de 3 ----
+Pour écrire un programme Python qui vérifie si un nombre est un multiple de 3, on utilise généralement
+l'opération modulo. Un nombre est multiple de 3 si le reste de sa division par 3 est égal à 0.
+Exemple: n % 3 == 0 (teste si le reste de la division par 3 est nul.
